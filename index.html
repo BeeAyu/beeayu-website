@@ -137,11 +137,199 @@ footer{background:#063b25;color:#c9ddd0;padding:35px 0;text-align:center}footer 
 <article class="card"><div class="icon">🪷</div><h3>Waxing</h3><p>Perawatan untuk membantu mengangkat rambut dari permukaan kulit secara efektif, sehingga kulit terasa lebih halus, bersih, dan terawat. Tersedia untuk berbagai area sesuai kebutuhan dengan proses yang dilakukan secara nyaman dan higienis.</p><a class="btn green book" data-service="Waxing" href="#booking">Booking</a></article>
 </div></div></section>
 
-<section id="tentang"><div class="container about">
-<div class="logo-box"><img src="./assets/logo.png" alt="BeeAy"></div>
-<div><div class="kicker">Tentang BeeAy</div><h2>Tempat untuk berhenti sejenak dan merawat diri.</h2><p style="color:var(--muted)">BeeAy hadir untuk memberikan pengalaman perawatan yang nyaman dengan pilihan layanan kecantikan untuk membantu Anda menikmati waktu untuk diri sendiri.</p>
-<ul style="margin-top:20px;padding-left:20px;color:var(--muted)"><li>Pelayanan personal dan ramah</li><li>Beragam pilihan treatment</li><li>Booking mudah melalui WhatsApp</li></ul></div>
-</div></section>
+```html
+<section id="tentang">
+    <div class="container about">
+
+        <!-- Logo BeeAy -->
+        <div class="logo-box">
+            <img 
+                src="./assets/logo.png" 
+                alt="Logo BeeAy"
+            >
+        </div>
+
+        <!-- Konten Tentang -->
+        <div class="about-content">
+
+            <div class="kicker">
+                Tentang BeeAy
+            </div>
+
+            <h2>
+                Tempat untuk Berhenti Sejenak, Merawat Diri,
+                dan Menikmati Waktu untuk Diri Sendiri.
+            </h2>
+
+            <p style="color: var(--muted);">
+                <strong>BeeAy</strong> hadir sebagai tempat untuk Anda
+                beristirahat sejenak dari kesibukan dan menikmati pengalaman
+                perawatan kecantikan yang nyaman, tenang, dan berkesan.
+            </p>
+
+            <p style="color: var(--muted);">
+                Dengan pilihan treatment yang beragam, kami berkomitmen
+                memberikan pelayanan yang personal, ramah, dan profesional
+                agar setiap kunjungan menjadi momen menyenangkan untuk
+                merawat diri dan meningkatkan rasa percaya diri.
+            </p>
+
+            <ul class="about-list">
+
+                <li>
+                    <span>💕</span>
+                    <div>
+                        <strong>Pelayanan Personal & Ramah</strong>
+                        <p>
+                            Perhatian dan pelayanan terbaik sesuai kebutuhan Anda.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <span>🌸</span>
+                    <div>
+                        <strong>Pilihan Treatment Beragam</strong>
+                        <p>
+                            Facial, lulur, peeling, ratus V, waxing, dan
+                            berbagai perawatan lainnya.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <span>📱</span>
+                    <div>
+                        <strong>Booking Mudah & Praktis</strong>
+                        <p>
+                            Reservasi perawatan dengan mudah melalui WhatsApp.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="about-tagline">
+                <strong>BeeAy</strong>
+                <span>
+                    Waktunya merawat diri, waktunya tampil lebih percaya diri.
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+```
+
+### CSS pendukung
+
+Jika CSS `about` yang sekarang belum mengatur tampilan tersebut, tambahkan:
+
+```css
+.about {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-content h2 {
+    margin: 10px 0 20px;
+    line-height: 1.25;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.about-list li > span {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.about-list strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.about-list p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.about-tagline {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-tagline strong {
+    font-size: 20px;
+}
+
+.about-tagline span {
+    color: var(--muted);
+    font-style: italic;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .logo-box img {
+        max-width: 160px;
+    }
+
+    .about-list {
+        text-align: left;
+    }
+
+    .about-tagline {
+        text-align: center;
+    }
+}
+```
+
+Dengan struktur ini, **desktop akan tampil logo di sebelah kiri dan informasi BeeAy di sebelah kanan**, sedangkan di HP otomatis berubah menjadi **logo di atas lalu informasi di bawah**, sehingga lebih nyaman dibaca.
 
 <section class="booking" id="booking"><div class="container">
 <div class="head"><div class="kicker">Online Booking</div><h2>Pesan Jadwal Anda</h2><p>Isi formulir, lalu WhatsApp akan terbuka dengan detail booking otomatis.</p></div>
