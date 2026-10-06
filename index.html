@@ -1,72 +1,1485 @@
+```html
 <!doctype html>
 <html lang="id">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BeeAy Lulur & Faccial</title>
-<meta name="description" content="BeeAy Lulur & Facial - Alami, Sehat, Cantik.">
+
+<title>BeeAy Lulur & Facial | Perawatan Kecantikan</title>
+
+<meta name="description" content="BeeAy Lulur & Facial - Perawatan kecantikan yang nyaman, berkelas, dan berkesan. Facial, lulur, peeling, ratus V, dan waxing.">
+
 <style>
-:root{--green:#0b5633;--green2:#177547;--gold:#c9a33a;--cream:#fbfaf4;--text:#17392a;--muted:#6b7b71}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:#fff}a{text-decoration:none}
-.container{max-width:1150px;margin:auto;padding:0 18px}
-.top{background:#063b25;color:#fff;text-align:center;padding:8px;font-size:13px}
-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e8eee7}
-.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.brand{display:flex;align-items:center;gap:10px;color:var(--green);font-weight:800}
-.brand img{width:52px;height:52px;object-fit:contain}
-.brand small{display:block;color:var(--gold);font-size:9px;letter-spacing:2px}
-.links{display:flex;gap:22px;font-size:14px;font-weight:700}.links a{color:var(--text)}.links a:hover{color:var(--green)}
-.btn{display:inline-block;padding:12px 19px;border-radius:30px;font-weight:800;border:0;cursor:pointer}
-.green{background:var(--green);color:#fff}.gold{background:linear-gradient(135deg,var(--gold),#f3d878);color:#17392a}
-.hero{padding:18px 0 70px;background:linear-gradient(180deg,#fff,#f4faef)}
-.banner{width:100%;display:block;border-radius:22px;box-shadow:0 15px 45px #174b2b22}
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;margin-top:25px}
-.kicker{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase}
-h1,h2{font-family:Georgia,serif;color:var(--green);line-height:1.15}
-h1{font-size:44px;margin:8px 0 12px}.hero p{color:var(--muted)}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
-.info{background:#fff;border:1px solid #e3eadf;border-radius:20px;padding:22px;box-shadow:0 12px 35px #174b2b15}
-.info h3{color:var(--green);margin-top:0}.hours{display:grid;grid-template-columns:1fr 1fr;gap:7px;font-size:13px}.hours div{background:#f4f8f1;padding:8px;border-radius:8px}
-section{padding:75px 0}.head{text-align:center;max-width:700px;margin:0 auto 38px}.head h2{font-size:36px;margin:7px 0}.head p{color:var(--muted)}
-.services{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#fff;border:1px solid #e4eadf;border-radius:20px;padding:23px;box-shadow:0 8px 25px #174b2b0c}.icon{font-size:32px}.card h3{color:var(--green)}.card p{color:var(--muted);font-size:14px;min-height:60px}.card .btn{padding:9px 14px;font-size:12px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.logo-box{background:#f8fbf6;border:1px solid #e4eadf;border-radius:28px;padding:25px}.logo-box img{width:100%;height:370px;object-fit:contain}
-.booking{background:linear-gradient(135deg,#063b25,#126c43)}.booking .head h2{color:#fff}.booking .head p{color:#d8ebdd}
-.form{max-width:850px;margin:auto;background:#fff;padding:28px;border-radius:25px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.full{grid-column:1/-1}label{display:block;font-size:12px;font-weight:800;margin-bottom:5px}input,select,textarea{width:100%;padding:12px;border:1px solid #dce6db;border-radius:11px;font:inherit}textarea{min-height:90px;resize:vertical}.form button{width:100%;margin-top:5px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{border:1px solid #e3eadf;border-radius:20px;padding:25px;box-shadow:0 10px 30px #174b2b12}.contact-card h3{color:var(--green)}.contact-card p{color:var(--muted)}.wa{font-size:24px;color:var(--green);font-weight:900}.map{width:100%;height:260px;border:0;border-radius:14px;margin-top:15px}
-footer{background:#063b25;color:#c9ddd0;padding:35px 0;text-align:center}footer strong{color:#fff}
-.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:26px;box-shadow:0 8px 25px #0004;z-index:20}
-.mobile{display:none}
-@media(max-width:850px){.links{display:none}.mobile{display:inline-block}.hero-grid,.about,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.container{padding:0 14px}.brand img{width:46px;height:46px}h1{font-size:34px}.cards,.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.hours{font-size:12px}section{padding:60px 0}}
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --green: #0b5633;
+    --green-dark: #063b25;
+    --green-soft: #177547;
+    --green-light: #edf7ef;
+
+    --gold: #c9a33a;
+    --gold-light: #f3d878;
+
+    --cream: #fbfaf4;
+    --white: #ffffff;
+
+    --text: #17392a;
+    --muted: #6b7b71;
+
+    --border: #e2e9e1;
+
+    --shadow-sm: 0 8px 25px rgba(23, 75, 43, .07);
+    --shadow-md: 0 15px 40px rgba(23, 75, 43, .11);
+    --shadow-lg: 0 25px 70px rgba(23, 75, 43, .15);
+
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 28px;
+
+    --max-width: 1180px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--text);
+    background: var(--white);
+
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.container {
+    width: min(var(--max-width), calc(100% - 36px));
+    margin: 0 auto;
+}
+
+section {
+    padding: 90px 0;
+}
+
+.kicker {
+    color: var(--gold);
+
+    font-size: 12px;
+    font-weight: 900;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1,
+h2 {
+    color: var(--green);
+}
+
+h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.08;
+
+    margin: 12px 0 22px;
+
+    letter-spacing: -.8px;
+}
+
+h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.15;
+
+    margin: 10px 0 18px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 46px;
+
+    padding: 12px 20px;
+
+    border: 0;
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.green {
+    color: #fff;
+    background: var(--green);
+
+    box-shadow: 0 10px 25px rgba(11, 86, 51, .20);
+}
+
+.green:hover {
+    background: var(--green-soft);
+    box-shadow: 0 14px 30px rgba(11, 86, 51, .25);
+}
+
+.gold {
+    color: var(--text);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--gold),
+            var(--gold-light)
+        );
+
+    box-shadow: 0 10px 25px rgba(201, 163, 58, .20);
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top {
+    background:
+        linear-gradient(
+            90deg,
+            var(--green-dark),
+            var(--green),
+            var(--green-dark)
+        );
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 8px 15px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: .3px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    background: rgba(255,255,255,.94);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(226,233,225,.9);
+}
+
+.nav {
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--green);
+
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.brand img {
+    width: 52px;
+    height: 52px;
+
+    object-fit: contain;
+}
+
+.brand small {
+    display: block;
+
+    margin-top: -2px;
+
+    color: var(--gold);
+
+    font-size: 8px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.links a {
+    position: relative;
+
+    color: var(--text);
+
+    transition: color .2s ease;
+}
+
+.links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 100%;
+    bottom: -7px;
+
+    height: 2px;
+
+    background: var(--gold);
+
+    transition: right .25s ease;
+}
+
+.links a:hover {
+    color: var(--green);
+}
+
+.links a:hover::after {
+    right: 0;
+}
+
+.mobile {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    background: #fff;
+
+    color: var(--green);
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    padding: 25px 0 95px;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(201,163,58,.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f5faf2 100%
+        );
+}
+
+.banner {
+    width: 100%;
+
+    display: block;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.banner:hover {
+    transform: translateY(-3px);
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(300px, .75fr);
+
+    gap: 55px;
+
+    align-items: center;
+
+    margin-top: 45px;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.intro-text {
+    max-width: 690px;
+}
+
+.intro-text p {
+    color: var(--muted);
+
+    font-size: 16px;
+
+    margin-bottom: 14px;
+}
+
+.intro-text strong {
+    color: var(--green);
+}
+
+.brand-tagline {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+
+    margin-top: 25px;
+    padding-left: 18px;
+
+    border-left: 3px solid var(--gold);
+}
+
+.brand-tagline strong {
+    color: var(--green);
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+}
+
+.brand-tagline span {
+    color: var(--muted);
+
+    font-size: 13px;
+    font-style: italic;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+
+/* =========================================================
+   INFO CARD
+========================================================= */
+
+.info {
+    background: rgba(255,255,255,.88);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    padding: 28px;
+
+    box-shadow: var(--shadow-md);
+}
+
+.info h3 {
+    color: var(--green);
+
+    font-size: 22px;
+
+    margin: 0 0 20px;
+}
+
+.hours {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+}
+
+.hours div {
+    background: var(--green-light);
+
+    padding: 11px;
+
+    border-radius: 12px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.hours b {
+    color: var(--green);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.head {
+    max-width: 720px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.head p {
+    color: var(--muted);
+
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services {
+    background:
+        linear-gradient(
+            180deg,
+            var(--cream),
+            #fff
+        );
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+
+    padding: 28px;
+
+    background: #fff;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    overflow: hidden;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--gold)
+        );
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    border-color: #d7e2d6;
+
+    box-shadow: var(--shadow-md);
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.icon {
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    margin-bottom: 17px;
+
+    border-radius: 17px;
+
+    background: var(--green-light);
+
+    font-size: 29px;
+}
+
+.card h3 {
+    color: var(--green);
+
+    font-size: 22px;
+
+    margin: 0 0 10px;
+}
+
+.card p {
+    flex: 1;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.75;
+
+    margin-bottom: 22px;
+}
+
+.card .btn {
+    align-self: flex-start;
+
+    padding: 10px 17px;
+
+    min-height: 40px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+#tentang {
+    background: #fff;
+}
+
+.about {
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px, .85fr)
+        minmax(0, 1.15fr);
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+.logo-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 430px;
+
+    padding: 40px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #ffffff 20%,
+            #f3f8f1 100%
+        );
+
+    border: 1px solid var(--border);
+
+    border-radius: 35px;
+
+    box-shadow: var(--shadow-md);
+
+    overflow: hidden;
+}
+
+.logo-box::after {
+    content: "BEEAY";
+
+    position: absolute;
+
+    bottom: 15px;
+    right: 25px;
+
+    color: rgba(11,86,51,.05);
+
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.logo-box img {
+    width: 100%;
+    max-width: 280px;
+
+    height: 330px;
+
+    object-fit: contain;
+
+    position: relative;
+    z-index: 1;
+}
+
+.about-content h2 {
+    max-width: 700px;
+}
+
+.about-content > p {
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.about-list {
+    list-style: none;
+
+    padding: 0;
+    margin: 28px 0 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.about-list li {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: flex-start;
+}
+
+.about-list li > span {
+    flex: 0 0 45px;
+
+    width: 45px;
+    height: 45px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--green-light);
+
+    border-radius: 13px;
+
+    font-size: 20px;
+}
+
+.about-list strong {
+    display: block;
+
+    color: var(--green);
+
+    margin-bottom: 2px;
+}
+
+.about-list p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BOOKING
+========================================================= */
+
+.booking {
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(201,163,58,.14),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #063b25,
+            #126c43
+        );
+
+    overflow: hidden;
+}
+
+.booking::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: -120px;
+    bottom: -120px;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    border-radius: 50%;
+}
+
+.booking .head h2 {
+    color: #fff;
+}
+
+.booking .head p {
+    color: #d8ebdd;
+}
+
+.booking .kicker {
+    color: var(--gold-light);
+}
+
+.form {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 34px;
+
+    background: rgba(255,255,255,.98);
+
+    border-radius: 28px;
+
+    box-shadow: 0 25px 70px rgba(0,0,0,.2);
+}
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: block;
+
+    color: var(--text);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dce6db;
+
+    border-radius: 12px;
+
+    background: #fff;
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--green);
+
+    box-shadow:
+        0 0 0 4px rgba(11,86,51,.08);
+}
+
+textarea {
+    min-height: 105px;
+
+    resize: vertical;
+}
+
+.form button {
+    width: 100%;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.contact-card {
+    padding: 28px;
+
+    background: #fff;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-card h3 {
+    color: var(--green);
+
+    margin-top: 0;
+
+    font-size: 22px;
+}
+
+.contact-card p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.wa {
+    color: var(--green);
+
+    font-size: clamp(24px, 3vw, 32px);
+
+    font-weight: 900;
+
+    letter-spacing: .5px;
+}
+
+.map {
+    width: 100%;
+    height: 280px;
+
+    display: block;
+
+    margin-top: 20px;
+
+    border: 0;
+
+    border-radius: 16px;
+}
+
+.opening-box {
+    margin-top: 24px;
+
+    padding: 17px;
+
+    background: var(--green-light);
+
+    border-radius: 14px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+.opening-box b {
+    color: var(--green);
+}
+
+
+/* =========================================================
+   FLOATING WHATSAPP
+========================================================= */
+
+.float {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 90;
+
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: #fff;
+
+    font-size: 26px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.2);
+
+    transition: transform .25s ease;
+}
+
+.float:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: var(--green-dark);
+
+    color: #c9ddd0;
+
+    padding: 45px 0;
+
+    text-align: center;
+}
+
+footer strong {
+    color: #fff;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+}
+
+footer small {
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+    right: 0;
+
+    padding: 15px 18px 20px;
+
+    background: #fff;
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow: var(--shadow-md);
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu a {
+    display: block;
+
+    padding: 13px 5px;
+
+    border-bottom: 1px solid #edf1ec;
+
+    color: var(--text);
+
+    font-weight: 800;
+
+    font-size: 14px;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: 0;
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content,
+.info,
+.card,
+.about-content,
+.logo-box,
+.form,
+.contact-card {
+    animation: fadeUp .7s ease both;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .links {
+        gap: 18px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .hero-content {
+        max-width: none;
+    }
+
+    .info {
+        max-width: none;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .logo-box {
+        min-height: 320px;
+    }
+
+    .logo-box img {
+        height: 260px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: min(100% - 28px, var(--max-width));
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    .top {
+        font-size: 11px;
+
+        padding: 7px 10px;
+    }
+
+    .nav {
+        min-height: 68px;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .brand img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: grid;
+        place-items: center;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 14px;
+        padding-bottom: 65px;
+    }
+
+    .banner {
+        border-radius: 18px;
+    }
+
+    .hero-grid {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 31px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions .btn {
+        width: 100%;
+    }
+
+    .hours {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .card {
+        padding: 23px;
+    }
+
+    .about {
+        gap: 30px;
+    }
+
+    .logo-box {
+        min-height: 270px;
+
+        padding: 25px;
+
+        border-radius: 24px;
+    }
+
+    .logo-box img {
+        height: 220px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .form {
+        padding: 22px 18px;
+
+        border-radius: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .full {
+        grid-column: auto;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 22px;
+    }
+
+    .map {
+        height: 240px;
+    }
+
+    .float {
+        width: 55px;
+        height: 55px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .hours {
+        grid-template-columns: 1fr;
+    }
+
+    .hours div {
+        padding: 10px 12px;
+    }
+
+    .brand-tagline {
+        margin-top: 20px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .logo-box img {
+        height: 190px;
+    }
+}
+
 </style>
 </head>
+
+
 <body>
 
-<div class="top">✨ BeeAy Lulur & Facial • Alami • Sehat • Cantik ✨</div>
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top">
+    ✨ BeeAy Lulur & Facial • Alami • Sehat • Cantik ✨
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
 <header>
-<div class="container nav">
-<a class="brand" href="./index.html">
-<img src="./assets/logo.png" alt="Logo BeeAy">
-<div>BeeAy<small>LULUR & FACIAL</small></div>
-</a>
-<nav class="links">
-<a href="#home">Beranda</a><a href="#layanan">Layanan</a><a href="#tentang">Tentang</a><a href="#booking">Booking</a><a href="#kontak">Kontak</a>
-</nav>
-<a class="btn green mobile" href="#booking">Booking</a>
-</div>
+
+    <div class="container nav">
+
+        <a class="brand" href="#home">
+
+            <img
+                src="./assets/logo.png"
+                alt="Logo BeeAy"
+            >
+
+            <div>
+                BeeAy
+                <small>LULUR & FACIAL</small>
+            </div>
+
+        </a>
+
+
+        <nav class="links">
+
+            <a href="#home">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#booking">Booking</a>
+            <a href="#kontak">Kontak</a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Buka menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+    </div>
+
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#home">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#booking">Booking</a>
+        <a href="#kontak">Kontak</a>
+
+    </div>
 
 </header>
 
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <section class="hero" id="home">
+
     <div class="container">
 
-        <img 
-            class="banner" 
-            src="./assets/banner.png" 
+        <img
+            class="banner"
+            src="./assets/banner.png"
             alt="BeeAy Lulur & Facial"
         >
+
 
         <div class="hero-grid">
 
@@ -76,188 +1489,1078 @@ footer{background:#063b25;color:#c9ddd0;padding:35px 0;text-align:center}footer 
                     Rawat Diri, Raih Kecantikan Alami
                 </div>
 
+
                 <h1>
                     Saatnya Memanjakan Diri dengan Perawatan Kecantikan yang Nyaman & Berkelas.
                 </h1>
 
+
                 <div class="intro-text">
 
                     <p>
-                        ✨ Nikmati waktu terbaik untuk memanjakan diri bersama 
+                        ✨ Nikmati waktu terbaik untuk memanjakan diri bersama
                         <strong>BeeAy</strong>.
                     </p>
 
                     <p>
-                        Hadirkan pengalaman perawatan yang nyaman dan berkesan 
-                        dengan berbagai pilihan 
-                        <strong>facial, lulur, peeling, ratus V, hingga waxing.</strong>
+                        Hadirkan pengalaman perawatan yang nyaman dan berkesan
+                        dengan berbagai pilihan
+                        <strong>
+                            facial, lulur, peeling, ratus V, hingga waxing.
+                        </strong>
                     </p>
 
                     <p>
-                        Rawat kecantikan, jaga kesegaran tubuh, dan pancarkan 
-                        rasa percaya diri Anda.
+                        Rawat kecantikan, jaga kesegaran tubuh,
+                        dan pancarkan rasa percaya diri Anda.
                     </p>
 
                 </div>
 
+
                 <div class="brand-tagline">
+
                     <strong>BeeAy</strong>
+
                     <span>
                         Waktunya merawat diri, waktunya tampil lebih percaya diri.
                     </span>
+
                 </div>
 
+
                 <div class="actions">
-                    
-<a class="btn green" href="#booking">💆 Booking Sekarang</a>
-<a class="btn gold" target="_blank" href="https://wa.me/6285292307000?text=Halo%20BeeAy%2C%20saya%20ingin%20konsultasi.">💬 WhatsApp</a>
-</div>
-</div>
-<div class="info">
-<h3>🕘 Jam Operasional</h3>
-<div class="hours">
-<div>Senin<br><b>09.00–16.00</b></div><div>Selasa<br><b>09.00–16.00</b></div>
-<div>Rabu<br><b>09.00–16.00</b></div><div>Kamis<br><b>09.00–16.00</b></div>
-<div>Jumat<br><b>09.00–16.00</b></div><div>Sabtu<br><b>09.00–16.00</b></div>
-<div>Minggu<br><b>10.00–18.00</b></div><div>WIB<br><b>Booking via WA</b></div>
-</div>
-</div>
-</div>
-</div>
-</section>
 
-<section class="services" id="layanan"><div class="container">
-<div class="head"><div class="kicker">Menu Perawatan</div><h2>Pilihan Treatment BeeAy</h2><p>Pilih layanan kemudian booking langsung melalui WhatsApp.</p></div>
-<div class="cards">
-<article class="card"><div class="icon">🌿</div><h3>Facial Detox</h3><p>Perawatan wajah yang dirancang untuk membantu membersihkan kulit secara menyeluruh, mengangkat kotoran dan minyak berlebih, serta memberikan sensasi segar dan nyaman. Cocok untuk membantu menjaga kulit agar terasa lebih bersih, segar, dan terawat.</p><a class="btn green book" data-service="Facial Detox" href="#booking">Booking</a></article>
-<article class="card"><div class="icon">✨</div><h3>Facial Microdermabrasi</h3><p>Perawatan eksfoliasi yang membantu mengangkat sel kulit mati, membersihkan permukaan kulit, dan membuat kulit terasa lebih halus, lembut, serta segar. Cocok untuk membantu merawat tekstur kulit agar tampak lebih cerah dan terawat.</p><a class="btn green book" data-service="Facial Microdermabrasi" href="#booking">Booking</a></article>
-<article class="card"><div class="icon">💎</div><h3>Peeling</h3><p>Perawatan kulit yang membantu mengangkat sel kulit mati, membersihkan permukaan kulit, dan memperbaiki tekstur kulit agar terasa lebih halus, segar, dan tampak lebih cerah. Cocok untuk membantu menjaga kulit tetap bersih, sehat, dan terawat.</p><a class="btn green book" data-service="Peeling" href="#booking">Booking</a></article>
-<article class="card"><div class="icon">🌸</div><h3>Lulur Badan</h3><p>Perawatan tubuh yang membantu mengangkat sel kulit mati, membersihkan kulit, serta menjaga kelembutan dan kesegarannya. Nikmati sensasi rileks dengan kulit yang terasa lebih halus, lembut, dan terawat.</p><a class="btn green book" data-service="Lulur Badan" href="#booking">Booking</a></article>
-<article class="card"><div class="icon">👑</div><h3>Ratus V</h3><p>Perawatan tradisional untuk area kewanitaan dengan prosedur yang nyaman dan menenangkan, menggunakan metode perawatan yang dilakukan secara lembut dan higienis untuk memberikan sensasi segar, bersih, dan lebih nyaman.</p><a class="btn green book" data-service="Ratus V" href="#booking">Booking</a></article>
-<article class="card"><div class="icon">🪷</div><h3>Waxing</h3><p>Perawatan untuk membantu mengangkat rambut dari permukaan kulit secara efektif, sehingga kulit terasa lebih halus, bersih, dan terawat. Tersedia untuk berbagai area sesuai kebutuhan dengan proses yang dilakukan secara nyaman dan higienis.</p><a class="btn green book" data-service="Waxing" href="#booking">Booking</a></article>
-</div></div></section>
+                    <a
+                        class="btn green"
+                        href="#booking"
+                    >
+                        💆 Booking Sekarang
+                    </a>
 
-<section id="tentang">
-    <div class="container about">
 
-        <!-- Logo BeeAy -->
-        <div class="logo-box">
-            <img 
-                src="./assets/logo.png" 
-                alt="Logo BeeAy"
-            >
+                    <a
+                        class="btn gold"
+                        target="_blank"
+                        rel="noopener"
+                        href="https://wa.me/6285292307000?text=Halo%20BeeAy%2C%20saya%20ingin%20konsultasi."
+                    >
+                        💬 WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- JAM OPERASIONAL -->
+
+            <div class="info">
+
+                <h3>
+                    🕘 Jam Operasional
+                </h3>
+
+                <div class="hours">
+
+                    <div>
+                        Senin<br>
+                        <b>09.00–20.00 WIB</b>
+                    </div>
+
+                    <div>
+                        Selasa<br>
+                        <b>09.00–20.00 WIB</b>
+                    </div>
+
+                    <div>
+                        Rabu<br>
+                        <b>09.00–20.00 WIB</b>
+                    </div>
+
+                    <div>
+                        Kamis<br>
+                        <b>09.00–20.00 WIB</b>
+                    </div>
+
+                    <div>
+                        Jumat<br>
+                        <b>09.00–20.00 WIB</b>
+                    </div>
+
+                    <div>
+                        Sabtu<br>
+                        <b>09.00–20.00 WIB</b>
+                    </div>
+
+                    <div>
+                        Minggu<br>
+                        <b>10.00–18.00 WIB</b>
+                    </div>
+
+                    <div>
+                        Booking<br>
+                        <b>Via WhatsApp</b>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- Konten Tentang -->
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LAYANAN
+===================================================== -->
+
+<section class="services" id="layanan">
+
+    <div class="container">
+
+        <div class="head">
+
+            <div class="kicker">
+                Menu Perawatan
+            </div>
+
+            <h2>
+                Pilihan Treatment BeeAy
+            </h2>
+
+            <p>
+                Pilih perawatan yang sesuai dengan kebutuhan Anda,
+                kemudian booking dengan mudah melalui WhatsApp.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <article class="card">
+
+                <div class="icon">🌿</div>
+
+                <h3>
+                    Facial Detox
+                </h3>
+
+                <p>
+                    Perawatan wajah yang dirancang untuk membantu membersihkan
+                    kulit secara menyeluruh, mengangkat kotoran dan minyak
+                    berlebih, serta memberikan sensasi segar dan nyaman.
+                </p>
+
+                <a
+                    class="btn green book"
+                    data-service="Facial Detox"
+                    href="#booking"
+                >
+                    Booking
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">✨</div>
+
+                <h3>
+                    Facial Microdermabrasi
+                </h3>
+
+                <p>
+                    Perawatan eksfoliasi yang membantu mengangkat sel kulit mati,
+                    membersihkan permukaan kulit, dan membuat kulit terasa lebih
+                    halus, lembut, serta segar.
+                </p>
+
+                <a
+                    class="btn green book"
+                    data-service="Facial Microdermabrasi"
+                    href="#booking"
+                >
+                    Booking
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">💎</div>
+
+                <h3>
+                    Peeling
+                </h3>
+
+                <p>
+                    Perawatan kulit yang membantu mengangkat sel kulit mati,
+                    membersihkan permukaan kulit, dan membantu memperbaiki
+                    tekstur kulit agar terasa lebih halus dan segar.
+                </p>
+
+                <a
+                    class="btn green book"
+                    data-service="Peeling"
+                    href="#booking"
+                >
+                    Booking
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">🌸</div>
+
+                <h3>
+                    Lulur Badan
+                </h3>
+
+                <p>
+                    Perawatan tubuh yang membantu mengangkat sel kulit mati,
+                    membersihkan kulit, serta menjaga kelembutan dan
+                    kesegarannya.
+                </p>
+
+                <a
+                    class="btn green book"
+                    data-service="Lulur Badan"
+                    href="#booking"
+                >
+                    Booking
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">👑</div>
+
+                <h3>
+                    Ratus V
+                </h3>
+
+                <p>
+                    Perawatan tradisional untuk area kewanitaan dengan prosedur
+                    yang nyaman dan menenangkan, dilakukan secara lembut dan
+                    higienis.
+                </p>
+
+                <a
+                    class="btn green book"
+                    data-service="Ratus V"
+                    href="#booking"
+                >
+                    Booking
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">🪷</div>
+
+                <h3>
+                    Waxing
+                </h3>
+
+                <p>
+                    Perawatan untuk membantu mengangkat rambut dari permukaan
+                    kulit sehingga kulit terasa lebih halus, bersih, dan
+                    terawat.
+                </p>
+
+                <a
+                    class="btn green book"
+                    data-service="Waxing"
+                    href="#booking"
+                >
+                    Booking
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TENTANG BEEAY
+===================================================== -->
+
+<section id="tentang">
+
+    <div class="container about">
+
+
+        <div class="logo-box">
+
+            <img
+                src="./assets/logo.png"
+                alt="Logo BeeAy"
+            >
+
+        </div>
+
+
         <div class="about-content">
 
             <div class="kicker">
                 Tentang BeeAy
             </div>
 
+
             <h2>
-                Tempat untuk Berhenti Sejenak, Merawat Diri,
-                dan Menikmati Waktu untuk Diri Sendiri.
+                Tempat untuk Berhenti Sejenak,
+                Merawat Diri, dan Menikmati Waktu
+                untuk Diri Sendiri.
             </h2>
 
-            <p style="color: var(--muted);">
+
+            <p>
                 <strong>BeeAy</strong> hadir sebagai tempat untuk Anda
                 beristirahat sejenak dari kesibukan dan menikmati pengalaman
                 perawatan kecantikan yang nyaman, tenang, dan berkesan.
             </p>
 
-            <p style="color: var(--muted);">
+
+            <p>
                 Dengan pilihan treatment yang beragam, kami berkomitmen
                 memberikan pelayanan yang personal, ramah, dan profesional
                 agar setiap kunjungan menjadi momen menyenangkan untuk
                 merawat diri dan meningkatkan rasa percaya diri.
             </p>
 
+
             <ul class="about-list">
 
                 <li>
+
                     <span>💕</span>
+
                     <div>
-                        <strong>Pelayanan Personal & Ramah</strong>
+
+                        <strong>
+                            Pelayanan Personal & Ramah
+                        </strong>
+
                         <p>
-                            Perhatian dan pelayanan terbaik sesuai kebutuhan Anda.
+                            Perhatian dan pelayanan terbaik
+                            sesuai kebutuhan Anda.
                         </p>
+
                     </div>
+
                 </li>
 
+
                 <li>
+
                     <span>🌸</span>
+
                     <div>
-                        <strong>Pilihan Treatment Beragam</strong>
+
+                        <strong>
+                            Pilihan Treatment Beragam
+                        </strong>
+
                         <p>
-                            Facial, lulur, peeling, ratus V, waxing, dan
-                            berbagai perawatan lainnya.
+                            Facial, lulur, peeling, ratus V,
+                            waxing, dan berbagai perawatan lainnya.
                         </p>
+
                     </div>
+
                 </li>
 
+
                 <li>
+
                     <span>📱</span>
+
                     <div>
-                        <strong>Booking Mudah & Praktis</strong>
+
+                        <strong>
+                            Booking Mudah & Praktis
+                        </strong>
+
                         <p>
-                            Reservasi perawatan dengan mudah melalui WhatsApp.
+                            Reservasi perawatan dengan mudah
+                            melalui WhatsApp.
                         </p>
+
                     </div>
+
                 </li>
 
             </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BOOKING
+===================================================== -->
+
+<section class="booking" id="booking">
+
+    <div class="container">
+
+        <div class="head">
+
+            <div class="kicker">
+                Online Booking
+            </div>
+
+            <h2>
+                Pesan Jadwal Perawatan Anda
+            </h2>
+
+            <p>
+                Isi formulir berikut dan detail booking akan
+                dikirim otomatis melalui WhatsApp.
+            </p>
+
+        </div>
+
+
+        <div class="form">
+
+            <form id="bookingForm">
+
+                <div class="form-grid">
+
+
+                    <div>
+
+                        <label for="nama">
+                            Nama Lengkap *
+                        </label>
+
+                        <input
+                            id="nama"
+                            type="text"
+                            autocomplete="name"
+                            required
+                            placeholder="Masukkan nama lengkap"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="nomor">
+                            Nomor WhatsApp *
+                        </label>
+
+                        <input
+                            id="nomor"
+                            type="tel"
+                            inputmode="numeric"
+                            autocomplete="tel"
+                            required
+                            placeholder="08xxxxxxxxxx"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="layanan">
+                            Pilihan Treatment *
+                        </label>
+
+                        <select
+                            id="layanan"
+                            required
+                        >
+
+                            <option value="">
+                                Pilih layanan
+                            </option>
+
+                            <option>
+                                Facial Detox
+                            </option>
+
+                            <option>
+                                Facial Microdermabrasi
+                            </option>
+
+                            <option>
+                                Peeling
+                            </option>
+
+                            <option>
+                                Lulur Badan
+                            </option>
+
+                            <option>
+                                Ratus V
+                            </option>
+
+                            <option>
+                                Waxing
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="tanggal">
+                            Tanggal *
+                        </label>
+
+                        <input
+                            id="tanggal"
+                            type="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="jam">
+                            Jam *
+                        </label>
+
+                        <input
+                            id="jam"
+                            type="time"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="jumlah">
+                            Jumlah Orang
+                        </label>
+
+                        <select id="jumlah">
+
+                            <option>1 orang</option>
+                            <option>2 orang</option>
+                            <option>3 orang</option>
+                            <option>4 orang</option>
+                            <option>5+ orang</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="full">
+
+                        <label for="catatan">
+                            Catatan / Permintaan Khusus
+                        </label>
+
+                        <textarea
+                            id="catatan"
+                            placeholder="Tuliskan catatan atau permintaan khusus..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="full">
+
+                        <button
+                            class="btn green"
+                            type="submit"
+                        >
+                            📲 KIRIM BOOKING KE WHATSAPP
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     KONTAK
+===================================================== -->
+
+<section id="kontak">
+
+    <div class="container">
+
+        <div class="head">
+
+            <div class="kicker">
+                Kontak
+            </div>
+
+            <h2>
+                Lokasi & Hubungi BeeAy
+            </h2>
+
+            <p>
+                Kami siap membantu Anda mendapatkan pengalaman
+                perawatan yang nyaman dan menyenangkan.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card">
+
+                <h3>
+                    📍 Alamat
+                </h3>
+
+                <p>
+                    Jaten RT 003 RW 005,
+                    Miricinde, Purwantoro,
+                    Wonogiri, Jawa Tengah.
+                </p>
+
+
+                <iframe
+                    class="map"
+                    loading="lazy"
+                    title="Lokasi BeeAy"
+                    src="https://www.google.com/maps?q=Jaten%20RT003%20RW005%20Miricinde%20Purwantoro%20Wonogiri&output=embed"
+                ></iframe>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    💬 WhatsApp
+                </h3>
+
+
+                <div class="wa">
+                    0852-9230-7000
+                </div>
+
+
+                <p>
+                    Untuk booking, konsultasi, informasi treatment,
+                    harga, dan konfirmasi jadwal.
+                </p>
+
+
+                <a
+                    class="btn green"
+                    target="_blank"
+                    rel="noopener"
+                    href="https://wa.me/6285292307000?text=Halo%20BeeAy%2C%20saya%20ingin%20booking."
+                >
+                    💬 Chat WhatsApp
+                </a>
+
+
+                <div class="opening-box">
+
+                    <b>
+                        🕘 Jam Buka
+                    </b>
+
+                    <br>
+
+                    Senin–Sabtu:
+                    <strong>09.00–20.00 WIB</strong>
+
+                    <br>
+
+                    Minggu:
+                    <strong>10.00–18.00 WIB</strong>
+
+                </div>
+
+            </div>
 
 
         </div>
 
     </div>
+
 </section>
 
 
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
 
-<section class="booking" id="booking"><div class="container">
-<div class="head"><div class="kicker">Online Booking</div><h2>Pesan Jadwal Anda</h2><p>Isi formulir, lalu WhatsApp akan terbuka dengan detail booking otomatis.</p></div>
-<div class="form"><form id="bookingForm"><div class="form-grid">
-<div><label>Nama Lengkap *</label><input id="nama" required></div>
-<div><label>Nomor WhatsApp *</label><input id="nomor" type="tel" required placeholder="08xxxxxxxxxx"></div>
-<div><label>Layanan *</label><select id="layanan" required><option value="">Pilih layanan</option><option>Facial Detox</option><option>Facial Microdermabrasi</option><option>Peeling</option><option>Lulur Badan</option><option>Ratus V</option><option>Waxing</option></select></div>
-<div><label>Tanggal *</label><input id="tanggal" type="date" required></div>
-<div><label>Jam *</label><input id="jam" type="time" required></div>
-<div><label>Jumlah Orang</label><select id="jumlah"><option>1 orang</option><option>2 orang</option><option>3 orang</option><option>4 orang</option><option>5+ orang</option></select></div>
-<div class="full"><label>Catatan</label><textarea id="catatan" placeholder="Catatan atau permintaan khusus"></textarea></div>
-<div class="full"><button class="btn green" type="submit">📲 KIRIM BOOKING KE WHATSAPP</button></div>
-</div></form></div>
-</div></section>
+<a
+    class="float"
+    target="_blank"
+    rel="noopener"
+    href="https://wa.me/6285292307000?text=Halo%20BeeAy%2C%20saya%20ingin%20booking."
+    aria-label="Hubungi BeeAy melalui WhatsApp"
+>
+    ☎
+</a>
 
-<section id="kontak"><div class="container">
-<div class="head"><div class="kicker">Kontak</div><h2>Lokasi & Hubungi BeeAy</h2></div>
-<div class="contact-grid">
-<div class="contact-card"><h3>📍 Alamat</h3><p>Jaten RT 003 RW 005, Miricinde, Purwantoro, Wonogiri, Jawa Tengah.</p><iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Jaten%20RT003%20RW005%20Miricinde%20Purwantoro%20Wonogiri&output=embed"></iframe></div>
-<div class="contact-card"><h3>💬 WhatsApp</h3><div class="wa">0852-9230-7000</div><p>Untuk booking, harga, konsultasi dan konfirmasi jadwal.</p><br><a class="btn green" target="_blank" href="https://wa.me/6285292307000?text=Halo%20BeeAy%2C%20saya%20ingin%20booking.">Chat WhatsApp</a><div style="margin-top:22px;background:#f4f8f1;padding:15px;border-radius:12px"><b style="color:var(--green)">Jam Buka</b><br>Senin–Sabtu 09.00–20.00 WIB<br>Minggu 10.00–18.00 WIB</div></div>
-</div></div></section>
 
-<a class="float" target="_blank" href="https://wa.me/6285292307000?text=Halo%20BeeAy%2C%20saya%20ingin%20booking." aria-label="WhatsApp">☎</a>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-<footer><div class="container"><strong>BeeAy Lulur & Facial</strong><br>Alami • Sehat • Cantik<br><small>Jaten RT 003 RW 005, Miricinde, Purwantoro, Wonogiri, Jawa Tengah<br>WhatsApp 0852-9230-7000</small><br><br><small>© <span id="year"></span> BeeAy</small></div></footer>
+<footer>
+
+    <div class="container">
+
+        <strong>
+            BeeAy Lulur & Facial
+        </strong>
+
+        <br>
+
+        Alami • Sehat • Cantik
+
+        <br><br>
+
+        <small>
+            Jaten RT 003 RW 005,
+            Miricinde, Purwantoro,
+            Wonogiri, Jawa Tengah.
+        </small>
+
+        <br>
+
+        <small>
+            WhatsApp 0852-9230-7000
+        </small>
+
+        <br><br>
+
+        <small>
+            © <span id="year"></span> BeeAy.
+            All Rights Reserved.
+        </small>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
 <script>
-document.getElementById("tanggal").min=new Date().toISOString().split("T")[0];
-document.querySelectorAll(".book").forEach(function(b){b.onclick=function(){document.getElementById("layanan").value=b.dataset.service;}});
-document.getElementById("bookingForm").addEventListener("submit",function(e){
-e.preventDefault();
-var nama=document.getElementById("nama").value.trim();
-var nomor=document.getElementById("nomor").value.trim();
-var layanan=document.getElementById("layanan").value;
-var tanggal=document.getElementById("tanggal").value;
-var jam=document.getElementById("jam").value;
-var jumlah=document.getElementById("jumlah").value;
-var catatan=document.getElementById("catatan").value.trim()||"-";
-var p=tanggal.split("-");
-var pesan="Halo BeeAy 👋\n\nSaya ingin melakukan BOOKING perawatan.\n\n👤 Nama: "+nama+"\n📱 WhatsApp: "+nomor+"\n💆 Layanan: "+layanan+"\n📅 Tanggal: "+p[2]+"-"+p[1]+"-"+p[0]+"\n⏰ Jam: "+jam+" WIB\n👥 Jumlah: "+jumlah+"\n📝 Catatan: "+catatan+"\n\nMohon konfirmasi ketersediaan jadwal. Terima kasih 🙏";
-window.open("https://wa.me/6285292307000?text="+encodeURIComponent(pesan),"_blank");
-});
-document.getElementById("year").textContent=new Date().getFullYear();
+
+/* =========================================================
+   TAHUN FOOTER
+========================================================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+/* =========================================================
+   MINIMUM TANGGAL BOOKING
+========================================================= */
+
+const tanggalInput =
+    document.getElementById("tanggal");
+
+const today =
+    new Date();
+
+const localToday =
+    new Date(
+        today.getTime() -
+        today.getTimezoneOffset() * 60000
+    )
+    .toISOString()
+    .split("T")[0];
+
+tanggalInput.min = localToday;
+
+
+/* =========================================================
+   MENU MOBILE
+========================================================= */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+menuToggle.addEventListener(
+    "click",
+    function () {
+
+        mobileMenu.classList.toggle("active");
+
+        const active =
+            mobileMenu.classList.contains("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            active
+        );
+
+        menuToggle.textContent =
+            active ? "✕" : "☰";
+
+    }
+);
+
+
+/* Tutup menu setelah memilih menu */
+
+document
+    .querySelectorAll(".mobile-menu a")
+    .forEach(function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                mobileMenu.classList.remove(
+                    "active"
+                );
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuToggle.textContent = "☰";
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   PILIH TREATMENT DARI CARD
+========================================================= */
+
+document
+    .querySelectorAll(".book")
+    .forEach(function(button) {
+
+        button.addEventListener(
+            "click",
+            function() {
+
+                const service =
+                    button.dataset.service;
+
+                document.getElementById(
+                    "layanan"
+                ).value = service;
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   BOOKING FORM
+========================================================= */
+
+document
+    .getElementById("bookingForm")
+    .addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            const nama =
+                document
+                    .getElementById("nama")
+                    .value
+                    .trim();
+
+
+            const nomor =
+                document
+                    .getElementById("nomor")
+                    .value
+                    .trim();
+
+
+            const layanan =
+                document
+                    .getElementById("layanan")
+                    .value;
+
+
+            const tanggal =
+                document
+                    .getElementById("tanggal")
+                    .value;
+
+
+            const jam =
+                document
+                    .getElementById("jam")
+                    .value;
+
+
+            const jumlah =
+                document
+                    .getElementById("jumlah")
+                    .value;
+
+
+            const catatan =
+                document
+                    .getElementById("catatan")
+                    .value
+                    .trim() || "-";
+
+
+            /* Validasi nomor */
+
+            const nomorClean =
+                nomor.replace(/\D/g, "");
+
+
+            if (
+                nomorClean.length < 10 ||
+                nomorClean.length > 15
+            ) {
+
+                alert(
+                    "Mohon masukkan nomor WhatsApp yang valid."
+                );
+
+                return;
+
+            }
+
+
+            /* Format tanggal */
+
+            const parts =
+                tanggal.split("-");
+
+
+            const tanggalIndonesia =
+                parts[2] +
+                "-" +
+                parts[1] +
+                "-" +
+                parts[0];
+
+
+            /* Pesan WhatsApp */
+
+            const pesan =
+`Halo BeeAy 👋
+
+Saya ingin melakukan BOOKING perawatan.
+
+👤 Nama: ${nama}
+📱 WhatsApp: ${nomor}
+💆 Treatment: ${layanan}
+📅 Tanggal: ${tanggalIndonesia}
+⏰ Jam: ${jam} WIB
+👥 Jumlah: ${jumlah}
+📝 Catatan: ${catatan}
+
+Mohon konfirmasi ketersediaan jadwal.
+
+Terima kasih 🙏`;
+
+
+            const whatsapp =
+                "https://wa.me/6285292307000?text=" +
+                encodeURIComponent(pesan);
+
+
+            window.open(
+                whatsapp,
+                "_blank",
+                "noopener"
+            );
+
+        }
+    );
+
+
+/* =========================================================
+   SCROLL SMOOTH UNTUK BOOKING CARD
+========================================================= */
+
+document
+    .querySelectorAll('a[href="#booking"]')
+    .forEach(function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                setTimeout(
+                    function() {
+
+                        const select =
+                            document.getElementById(
+                                "layanan"
+                            );
+
+                        if (select.value) {
+                            select.focus();
+                        }
+
+                    },
+                    500
+                );
+
+            }
+        );
+
+    });
+
 </script>
+
 </body>
 </html>
+```
